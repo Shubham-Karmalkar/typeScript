@@ -1,0 +1,36 @@
+/**
+ * there are many types in typescript
+ * 1. Number
+ * 2. String
+ * 3. Boolean
+ * 4. Null
+ * 5. Undefined
+ * 6. Void
+ * 7. Object
+ * 8. Array
+ * 9. Tuples
+ * 10. Any(more javascriptish in nature)
+ * 11. Never
+ * 12. unknown
+ * 10. etc...
+ */
+/**
+ * Sytax
+ * let variableName: type = value
+ *
+ * almost all the types in typescript are lowercase
+ */
+//string
+var greetings = "Hello Shubham";
+greetings = greetings.toLowerCase();
+console.log(greetings);
+//number
+var userId = 333.345;
+//boolean
+var isLoggedIn = false;
+//any
+var hero;
+function getHero() {
+    return "thorfin";
+}
+hero = getHero();

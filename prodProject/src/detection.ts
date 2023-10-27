@@ -158,3 +158,5 @@ function getAreaImproved(shape: Shape) {
             return _exhaustiveCheck;// and its yelling at us
     }
 }
+
+export {}

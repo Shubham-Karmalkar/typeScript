@@ -32,3 +32,5 @@ const shubham: Admin = {dbId: 33, email: "karmlkar", userId: 23434,
 };
 
 shubham.email = "karmalkarshubham22@gmail.com";
+
+export {}

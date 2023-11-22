@@ -214,3 +214,48 @@ lenNew(Math.random() > 0.5 ? "hello" : [0]);
 
 
 
+/**
+ * Additional types
+ * 1. void return type means we are not returning anything from function i.e not return statement.
+ * 2. object: its any type except primitive. even functions are object type and object is different than {} and Object.
+ * 3. unknown: unknown type is same as any type but we can't do any operation on that object or parameter.
+ *              we can also use unknow as return type of function
+ */
+
+function f1 (a: any) {
+    a.b();
+}
+
+function f2 (a: unknown) {
+    a.b();
+}
+
+/**
+ * never:
+ *  this type can be used for function which never returns i.e either stops the program or throws the error
+ * also sometimes it can come in conditions when no condition left to validate
+ * or we can use it in switch case to make sure we considered all the cases
+ */
+
+function fail (msg: string): never {
+    throw Error(msg);
+}
+
+
+/**
+ * Assignability of Functions:
+ *      return type void: 
+ *          when we use function type which is returning void on something which returns value will not 
+ *          cause issue, only thing is assigned variable of return of function will have type of void;
+ *          This is required a some cases were we are doing arr.push operation in forEach where callback
+ *          is returning number as return of push but forEach is not expection any return;
+ */
+
+type FuncType = () => void;
+
+let myFun: Function = () => { //Function return type is any which might cause issue so for safer side we use void;
+    return 23;
+}
+
+let d = myFun();
+d.name();

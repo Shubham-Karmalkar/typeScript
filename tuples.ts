@@ -16,4 +16,5 @@ user.push(23)
 
 console.log(user)
 
+let num = [22, 56] as const;
 export { }

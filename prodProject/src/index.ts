@@ -27,8 +27,12 @@ class User {
         ) {
         }
         
-        private deleteToken() {
+    private deleteToken() {
        console.log("Token deleted") 
+    }
+
+    getAdress(){
+        return "this is full address"
     }
 
     get getAppleEmail(): string { //this is the getter method
@@ -43,7 +47,10 @@ class User {
         this._courseCount = value
     }
 }
-// const shubham = new User("shubham", "karmlkarshubham22@gmail.com", "2343");
+// const shubhams = new User("shubham", "karmlkarshubham22@gmail.com", "2343");
+// console.log(JSON.stringify(shubhams))
+// console.log((Object.keys(shubhams)))
+// console.log(shubhams.getAdress())
 
 // // shubham.deleteToken()
 // shubham.courseCount = 33;

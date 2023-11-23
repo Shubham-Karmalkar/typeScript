@@ -136,4 +136,6 @@ console.log(generateInstance(Lion).name)
 
 /**
  * what is (new() => T ) in above code learn more
+ * new () => T is the constructor call defination or type that, that variable is going to have constructor
+ * defination i.e its a class
  */

@@ -9,7 +9,7 @@
 let user: [string, number, boolean]
 
 user = ["hello", 1234, true]
-
+user = [...user, false]
 //even those this is tuple we allowed to use array methods which is wrong
 
 user.push(23)

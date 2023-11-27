@@ -129,7 +129,7 @@ let areaConfig = {
     width:25
 }
 
-createArea(areaConfig)//this is not giving error
+createArea(areaConfig)//this is not giving error which could be dengerous
 
 createArea({ // this is giving error
     colour:"red",
@@ -167,7 +167,7 @@ createRectArea({
 
 //But be warn some spelling correction of color is a bug which needed to be resolved
 //and as long as we are having one property matching it won't yell at us.
-//for simple things like above we should use work around instead we should resolve those
+//for simple things like above we should not use work around instead we should resolve those
 
 
 
@@ -247,7 +247,7 @@ interface BoxUpgrade<Type> {
 }
 
 let x2:BoxUpgrade<string> = {
-    content:"ehllow "
+    content:"ehllow"
 }
 
 console.log(x2.content.toUpperCase());
